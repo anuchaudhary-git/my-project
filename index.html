@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DSA Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>🧠 DSA Quiz</h1>
+    <div id="quiz-box">
+      <div class="top-bar">
+        <span id="question-counter">Question 1/50</span>
+        <span id="timer">⏱️ 30s</span>
+        <span id="current-score">Score: 0</span>
+      </div>
+      <div class="progress-bar"><div id="progress"></div></div>
+      <div class="topic-badge" id="topic-badge">Arrays</div>
+      <p id="question"></p>
+      <div id="options"></div>
+      <div id="explanation"></div>
+      <button id="next-btn" onclick="nextQuestion()">Next ➡️</button>
+    </div>
+    <div id="result" style="display:none;">
+      <h2>🎉 Quiz Complete!</h2>
+      <p id="score-text"></p>
+      <p id="grade"></p>
+      <button onclick="restartQuiz()">🔄 Restart</button>
+      <hr/>
+      <h3>📊 Score History</h3>
+      <ul id="history-list"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
